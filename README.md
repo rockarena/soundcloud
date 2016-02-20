@@ -1,16 +1,20 @@
-install dependencies:
+##SoundCloud Player
+
+**install dependencies:**
 
 npm install
 
-run in development:
+**run in development:**
 
-npm start //localhost:8080
+npm start 
+_//localhost:8080_
 
-create build:
+**create build:**
 
-gulp build
+gulp build 
+_creates build in /dist_ folder
 
-and run http server from /dist
+_and run http server from /dist_
 
 
 
