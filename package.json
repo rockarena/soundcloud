@@ -4,8 +4,7 @@
   "description": "SoundCloud Player",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --inline -d",
-    "build": "webpack --config webpack-production.config.js -p"
+    "start": "webpack-dev-server --inline -d"
   },
   "keywords": [
     "SoundCloud",
@@ -18,7 +17,6 @@
     "css-loader": "^0.23.1",
     "file-loader": "^0.8.5",
     "gulp": "^3.9.1",
-    "gulp-util": "^3.0.7",
     "html-webpack-plugin": "^2.9.0",
     "jshint": "^2.9.1",
     "jshint-loader": "^0.8.3",

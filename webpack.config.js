@@ -6,12 +6,11 @@ module.exports = {
   context: path.resolve('app/src/'),
   entry: {bundle: './main'},
   output: {
-    path: path.resolve('build/js/'),
-    publicPath:'/public/js/',
     filename: '[name].js',
+    path: path.resolve('dist/'),
   },
   devServer: {
-    contentBase: 'public'
+    contentBase: 'app/src/html'
   },
   resolve: {
     extentions: ['', 'js']
