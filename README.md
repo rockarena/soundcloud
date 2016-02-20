@@ -7,15 +7,16 @@ npm install
 **run in development:**
 
 npm start 
+
 _serving from //localhost:8080_
 
 **create build:**
 
 gulp build
 
-_creates build in /dist_ folder
+_creates build in /dist folder_
 
-run http server from /dist
+**run http server from /dist**
 
 for example:
 
