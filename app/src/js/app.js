@@ -2,6 +2,7 @@ var $ = require('jquery');
 var soundCloud = require('./soundCloud');
 var userData = require('./user');
 var toastr = require('toastr');
+var config = require('./config');
 toastr.options.timeOut = 1000;
 
 var app = {
@@ -27,7 +28,7 @@ var app = {
   search: function(searchPhrase, next) {
     var searchFieldValue = app.controls.search.val();
     if (!searchPhrase && searchFieldValue.length > 0) {
-      app.searches.unshift(searchFieldValue);
+      app.addToHistory(searchFieldValue);
       app.saveUserData();
     }
 
@@ -178,6 +179,14 @@ var app = {
 
   saveUserData: function(){
     userData.save(app.searches,app.viewType);
+  },
+
+  addToHistory: function(phrase) {
+    app.searches.unshift(phrase);
+    if (app.searches.length > config.historyLimit - 1) {
+      var itemsToRemove =app.searches.length - config.historyLimit;
+      app.searches.splice(config.historyLimit,itemsToRemove);
+    }
   },
 
   showCoverArt: function(id) {
