@@ -1,0 +1,38 @@
+{
+  "name": "SC_Player",
+  "version": "0.0.0",
+  "description": "SoundCloud Player",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --inline -d",
+    "build": "webpack --config webpack-production.config.js -p"
+  },
+  "keywords": [
+    "SoundCloud",
+    "Audio",
+    "Player"
+  ],
+  "author": "Boris Grinshpun",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^0.23.1",
+    "file-loader": "^0.8.5",
+    "gulp": "^3.9.1",
+    "gulp-util": "^3.0.7",
+    "html-webpack-plugin": "^2.9.0",
+    "jshint": "^2.9.1",
+    "jshint-loader": "^0.8.3",
+    "less": "^2.6.0",
+    "less-loader": "^2.2.2",
+    "strip-loader": "^0.1.2",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.13",
+    "webpack-dev-server": "~1.14.1",
+    "webpack-stream": "^3.1.0"
+  },
+  "dependencies": {
+    "jquery": "^2.2.0",
+    "toastr": "^2.1.2"
+  }
+}
