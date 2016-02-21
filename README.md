@@ -4,6 +4,10 @@
 
 npm install
 
+_npm install gulp webpack -g_
+
+_to be availible from CLI_
+
 **run in development:**
 
 npm start 
